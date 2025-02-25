@@ -46,7 +46,7 @@ main {
   max-width: 1800px;
   margin: 0 auto;
   position: relative;
-  background-color: aqua;
+
 }
 
 @media (max-width:1800px) {
@@ -78,12 +78,12 @@ main {
 .catalog__filter {
   width: 200px;
   flex-shrink: 0;
-  background-color: gray;
+
 }
 
 .catalog__sort {
   min-height: 40px;
-  background-color: gray;
+
 }
 
 .catalog__content {
@@ -126,7 +126,10 @@ main {
   display: flex;
   flex-direction: column;
 }
-
+.swiper-card {
+  width: 100%;
+  aspect-ratio: 1;
+}
 .catalog__img {
   width: 100%;
   border-radius: 20px;
@@ -266,4 +269,56 @@ main {
 
 h1 {
   font-size: calc(abs(-80px)/2);
+}
+
+/*--------фильтрация цвет----------------*/
+.filter__section {
+  padding: 10px;
+}
+.filter-color {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}
+.filter-color__item {
+  flex-shrink: 0;
+}
+.filter-colo__label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.filter-color__radio {
+  display: none;
+}
+
+.filter-color__label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  outline: gray 0px solid;
+  outline-offset: 0px;
+  transition: outline 0.2s, outline-offset 0.2s;
+}
+
+.filter-color__radio:checked+.filter-color__label {
+  outline: gray 2px solid;
+  outline-offset: 3px;
+}
+
+.filter-color__label::after {
+  content:"";
+  transition: transform 0.2s;
+}
+.filter-color__radio:checked+.filter-color__label::after {
+  content:"\F272";
+  font-family: "bootstrap-icons";
+  color: gray;
+  transform: scale(1.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
