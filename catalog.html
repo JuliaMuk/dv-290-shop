@@ -8,7 +8,18 @@
   <title>Каталог товаров</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="scss/style.css">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="js/swiper.js"></script>
+  <script defer src="js/aos.js"></script>
 </head>
 
 <body>
@@ -22,6 +33,313 @@
         <div class="catalog__content">
           <div class="catalog__sort"></div>
           <div class="catalog__grid">
+            <div class="catalog__card" data-aos="flip-up">
+              <div class="img__wrapper">
+                <!-- Slider main container -->
+                <div class="swiper swiper-card">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img class="catalog__img" src="img/catalog-img.webp" alt=""></div>
+                    <div class="swiper-slide"><img class="catalog__img" src="img/catalog-img.webp" alt=""></div>
+                    <div class="swiper-slide"><img class="catalog__img" src="img/catalog-img.webp" alt=""></div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                 
+                </div>
+
+                
+                <i class="fav-btn bi bi-heart-fill"></i>
+                <div class="catalog__promotions">
+                  <div class="sales">
+                    Распродажа
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__price">
+                <span class="price-now">3500 &#8381;</span>
+                <span class="price-early">7600 &#8381;</span>
+                <span class="price-sale">-30%</span>
+              </div>
+              <div class="catalog__rest">
+                Осталось 50 шт
+              </div>
+              <div class="catalog__brand">
+                <i class="bi bi-check-circle-fill"></i>
+                ориганал
+              </div>
+              <a href="#" class="catalog__title">Чехол из алькантары на Apple </a>
+
+              <div class="catalog__feedback">
+                <div class="catalog__raiting">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4,7</span>
+                </div>
+                <div class="catalog__review">
+                  <i class="bi bi-chat-fill"></i>
+                  <span>789 отзыва</span>
+                </div>
+              </div>
+              <button class="catalog__btn">Заказать</button>
+            </div>
+            <div class="catalog__card" data-aos="zoom-in">
+              <div class="img__wrapper">
+                <img class="catalog__img" src="img/catalog-img3.webp" alt="">
+                <i class="fav-btn bi bi-heart-fill"></i>
+                <div class="catalog__promotions">
+                  <div class="sales">
+                    Распродажа
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__price">
+                <span class="price-now">3500 &#8381;</span>
+                <span class="price-early">7600 &#8381;</span>
+                <span class="price-sale">-30%</span>
+              </div>
+              <div class="catalog__rest">
+                Осталось 50 шт
+              </div>
+              <div class="catalog__brand">
+                <i class="bi bi-check-circle-fill"></i>
+                ориганал
+              </div>
+              <a href="#" class="catalog__title">Чехол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple
+                iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro</a>
+
+              <div class="catalog__feedback">
+                <div class="catalog__raiting">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4,7</span>
+                </div>
+                <div class="catalog__review">
+                  <i class="bi bi-chat-fill"></i>
+                  <span>789 отзыва</span>
+                </div>
+              </div>
+              <button class="catalog__btn">Заказать</button>
+            </div>
+            <div class="catalog__card" data-aos="zoom-in">
+              <div class="img__wrapper">
+                <img class="catalog__img" src="img/catalog-img.webp" alt="">
+                <i class="fav-btn bi bi-heart-fill"></i>
+                <div class="catalog__promotions">
+                  <div class="sales">
+                    Распродажа
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__price">
+                <span class="price-now">3500 &#8381;</span>
+                <span class="price-early">7600 &#8381;</span>
+                <span class="price-sale">-30%</span>
+              </div>
+              <div class="catalog__rest">
+                Осталось 50 шт
+              </div>
+              <div class="catalog__brand">
+                <i class="bi bi-check-circle-fill"></i>
+                ориганал
+              </div>
+              <a href="#" class="catalog__title">Чехол из алькантары на Apple </a>
+
+              <div class="catalog__feedback">
+                <div class="catalog__raiting">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4,7</span>
+                </div>
+                <div class="catalog__review">
+                  <i class="bi bi-chat-fill"></i>
+                  <span>789 отзыва</span>
+                </div>
+              </div>
+              <button class="catalog__btn">Заказать</button>
+            </div>
+            <div class="catalog__card" data-aos="zoom-in">
+              <div class="img__wrapper">
+                <img class="catalog__img" src="img/catalog-img3.webp" alt="">
+                <i class="fav-btn bi bi-heart-fill"></i>
+                <div class="catalog__promotions">
+                  <div class="sales">
+                    Распродажа
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__price">
+                <span class="price-now">3500 &#8381;</span>
+                <span class="price-early">7600 &#8381;</span>
+                <span class="price-sale">-30%</span>
+              </div>
+              <div class="catalog__rest">
+                Осталось 50 шт
+              </div>
+              <div class="catalog__brand">
+                <i class="bi bi-check-circle-fill"></i>
+                ориганал
+              </div>
+              <a href="#" class="catalog__title">Чехол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple
+                iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro</a>
+
+              <div class="catalog__feedback">
+                <div class="catalog__raiting">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4,7</span>
+                </div>
+                <div class="catalog__review">
+                  <i class="bi bi-chat-fill"></i>
+                  <span>789 отзыва</span>
+                </div>
+              </div>
+              <button class="catalog__btn">Заказать</button>
+            </div>
+            <div class="catalog__card" data-aos="zoom-in">
+              <div class="img__wrapper">
+                <img class="catalog__img" src="img/catalog-img.webp" alt="">
+                <i class="fav-btn bi bi-heart-fill"></i>
+                <div class="catalog__promotions">
+                  <div class="sales">
+                    Распродажа
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__price">
+                <span class="price-now">3500 &#8381;</span>
+                <span class="price-early">7600 &#8381;</span>
+                <span class="price-sale">-30%</span>
+              </div>
+              <div class="catalog__rest">
+                Осталось 50 шт
+              </div>
+              <div class="catalog__brand">
+                <i class="bi bi-check-circle-fill"></i>
+                ориганал
+              </div>
+              <a href="#" class="catalog__title">Чехол из алькантары на Apple </a>
+
+              <div class="catalog__feedback">
+                <div class="catalog__raiting">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4,7</span>
+                </div>
+                <div class="catalog__review">
+                  <i class="bi bi-chat-fill"></i>
+                  <span>789 отзыва</span>
+                </div>
+              </div>
+              <button class="catalog__btn">Заказать</button>
+            </div>
+            <div class="catalog__card" data-aos="zoom-in">
+              <div class="img__wrapper">
+                <img class="catalog__img" src="img/catalog-img3.webp" alt="">
+                <i class="fav-btn bi bi-heart-fill"></i>
+                <div class="catalog__promotions">
+                  <div class="sales">
+                    Распродажа
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__price">
+                <span class="price-now">3500 &#8381;</span>
+                <span class="price-early">7600 &#8381;</span>
+                <span class="price-sale">-30%</span>
+              </div>
+              <div class="catalog__rest">
+                Осталось 50 шт
+              </div>
+              <div class="catalog__brand">
+                <i class="bi bi-check-circle-fill"></i>
+                ориганал
+              </div>
+              <a href="#" class="catalog__title">Чехол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple
+                iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro</a>
+
+              <div class="catalog__feedback">
+                <div class="catalog__raiting">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4,7</span>
+                </div>
+                <div class="catalog__review">
+                  <i class="bi bi-chat-fill"></i>
+                  <span>789 отзыва</span>
+                </div>
+              </div>
+              <button class="catalog__btn">Заказать</button>
+            </div>
+            <div class="catalog__card" data-aos="zoom-in">
+              <div class="img__wrapper">
+                <img class="catalog__img" src="img/catalog-img.webp" alt="">
+                <i class="fav-btn bi bi-heart-fill"></i>
+                <div class="catalog__promotions">
+                  <div class="sales">
+                    Распродажа
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__price">
+                <span class="price-now">3500 &#8381;</span>
+                <span class="price-early">7600 &#8381;</span>
+                <span class="price-sale">-30%</span>
+              </div>
+              <div class="catalog__rest">
+                Осталось 50 шт
+              </div>
+              <div class="catalog__brand">
+                <i class="bi bi-check-circle-fill"></i>
+                ориганал
+              </div>
+              <a href="#" class="catalog__title">Чехол из алькантары на Apple </a>
+
+              <div class="catalog__feedback">
+                <div class="catalog__raiting">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4,7</span>
+                </div>
+                <div class="catalog__review">
+                  <i class="bi bi-chat-fill"></i>
+                  <span>789 отзыва</span>
+                </div>
+              </div>
+              <button class="catalog__btn">Заказать</button>
+            </div>
+            <div class="catalog__card" data-aos="zoom-in">
+              <div class="img__wrapper">
+                <img class="catalog__img" src="img/catalog-img3.webp" alt="">
+                <i class="fav-btn bi bi-heart-fill"></i>
+                <div class="catalog__promotions">
+                  <div class="sales">
+                    Распродажа
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__price">
+                <span class="price-now">3500 &#8381;</span>
+                <span class="price-early">7600 &#8381;</span>
+                <span class="price-sale">-30%</span>
+              </div>
+              <div class="catalog__rest">
+                Осталось 50 шт
+              </div>
+              <div class="catalog__brand">
+                <i class="bi bi-check-circle-fill"></i>
+                ориганал
+              </div>
+              <a href="#" class="catalog__title">Чехол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple
+                iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro</a>
+
+              <div class="catalog__feedback">
+                <div class="catalog__raiting">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4,7</span>
+                </div>
+                <div class="catalog__review">
+                  <i class="bi bi-chat-fill"></i>
+                  <span>789 отзыва</span>
+                </div>
+              </div>
+              <button class="catalog__btn">Заказать</button>
+            </div>
             <div class="catalog__card">
               <div class="img__wrapper">
                 <img class="catalog__img" src="img/catalog-img.webp" alt="">
@@ -80,295 +398,8 @@
                 <i class="bi bi-check-circle-fill"></i>
                 ориганал
               </div>
-              <a href="#" class="catalog__title">Чехол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro</a>
-
-              <div class="catalog__feedback">
-                <div class="catalog__raiting">
-                  <i class="bi bi-star-fill"></i>
-                  <span>4,7</span>
-                </div>
-                <div class="catalog__review">
-                  <i class="bi bi-chat-fill"></i>
-                  <span>789 отзыва</span>
-                </div>
-              </div>
-              <button class="catalog__btn">Заказать</button>
-            </div>
-            <div class="catalog__card">
-              <div class="img__wrapper">
-                <img class="catalog__img" src="img/catalog-img.webp" alt="">
-                <i class="fav-btn bi bi-heart-fill"></i>
-                <div class="catalog__promotions">
-                  <div class="sales">
-                    Распродажа
-                  </div>
-                </div>
-              </div>
-              <div class="catalog__price">
-                <span class="price-now">3500 &#8381;</span>
-                <span class="price-early">7600 &#8381;</span>
-                <span class="price-sale">-30%</span>
-              </div>
-              <div class="catalog__rest">
-                Осталось 50 шт
-              </div>
-              <div class="catalog__brand">
-                <i class="bi bi-check-circle-fill"></i>
-                ориганал
-              </div>
-              <a href="#" class="catalog__title">Чехол из алькантары на Apple </a>
-
-              <div class="catalog__feedback">
-                <div class="catalog__raiting">
-                  <i class="bi bi-star-fill"></i>
-                  <span>4,7</span>
-                </div>
-                <div class="catalog__review">
-                  <i class="bi bi-chat-fill"></i>
-                  <span>789 отзыва</span>
-                </div>
-              </div>
-              <button class="catalog__btn">Заказать</button>
-            </div>
-            <div class="catalog__card">
-              <div class="img__wrapper">
-                <img class="catalog__img" src="img/catalog-img3.webp" alt="">
-                <i class="fav-btn bi bi-heart-fill"></i>
-                <div class="catalog__promotions">
-                  <div class="sales">
-                    Распродажа
-                  </div>
-                </div>
-              </div>
-              <div class="catalog__price">
-                <span class="price-now">3500 &#8381;</span>
-                <span class="price-early">7600 &#8381;</span>
-                <span class="price-sale">-30%</span>
-              </div>
-              <div class="catalog__rest">
-                Осталось 50 шт
-              </div>
-              <div class="catalog__brand">
-                <i class="bi bi-check-circle-fill"></i>
-                ориганал
-              </div>
-              <a href="#" class="catalog__title">Чехол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro</a>
-
-              <div class="catalog__feedback">
-                <div class="catalog__raiting">
-                  <i class="bi bi-star-fill"></i>
-                  <span>4,7</span>
-                </div>
-                <div class="catalog__review">
-                  <i class="bi bi-chat-fill"></i>
-                  <span>789 отзыва</span>
-                </div>
-              </div>
-              <button class="catalog__btn">Заказать</button>
-            </div>
-            <div class="catalog__card">
-              <div class="img__wrapper">
-                <img class="catalog__img" src="img/catalog-img.webp" alt="">
-                <i class="fav-btn bi bi-heart-fill"></i>
-                <div class="catalog__promotions">
-                  <div class="sales">
-                    Распродажа
-                  </div>
-                </div>
-              </div>
-              <div class="catalog__price">
-                <span class="price-now">3500 &#8381;</span>
-                <span class="price-early">7600 &#8381;</span>
-                <span class="price-sale">-30%</span>
-              </div>
-              <div class="catalog__rest">
-                Осталось 50 шт
-              </div>
-              <div class="catalog__brand">
-                <i class="bi bi-check-circle-fill"></i>
-                ориганал
-              </div>
-              <a href="#" class="catalog__title">Чехол из алькантары на Apple </a>
-
-              <div class="catalog__feedback">
-                <div class="catalog__raiting">
-                  <i class="bi bi-star-fill"></i>
-                  <span>4,7</span>
-                </div>
-                <div class="catalog__review">
-                  <i class="bi bi-chat-fill"></i>
-                  <span>789 отзыва</span>
-                </div>
-              </div>
-              <button class="catalog__btn">Заказать</button>
-            </div>
-            <div class="catalog__card">
-              <div class="img__wrapper">
-                <img class="catalog__img" src="img/catalog-img3.webp" alt="">
-                <i class="fav-btn bi bi-heart-fill"></i>
-                <div class="catalog__promotions">
-                  <div class="sales">
-                    Распродажа
-                  </div>
-                </div>
-              </div>
-              <div class="catalog__price">
-                <span class="price-now">3500 &#8381;</span>
-                <span class="price-early">7600 &#8381;</span>
-                <span class="price-sale">-30%</span>
-              </div>
-              <div class="catalog__rest">
-                Осталось 50 шт
-              </div>
-              <div class="catalog__brand">
-                <i class="bi bi-check-circle-fill"></i>
-                ориганал
-              </div>
-              <a href="#" class="catalog__title">Чехол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro</a>
-
-              <div class="catalog__feedback">
-                <div class="catalog__raiting">
-                  <i class="bi bi-star-fill"></i>
-                  <span>4,7</span>
-                </div>
-                <div class="catalog__review">
-                  <i class="bi bi-chat-fill"></i>
-                  <span>789 отзыва</span>
-                </div>
-              </div>
-              <button class="catalog__btn">Заказать</button>
-            </div>
-            <div class="catalog__card">
-              <div class="img__wrapper">
-                <img class="catalog__img" src="img/catalog-img.webp" alt="">
-                <i class="fav-btn bi bi-heart-fill"></i>
-                <div class="catalog__promotions">
-                  <div class="sales">
-                    Распродажа
-                  </div>
-                </div>
-              </div>
-              <div class="catalog__price">
-                <span class="price-now">3500 &#8381;</span>
-                <span class="price-early">7600 &#8381;</span>
-                <span class="price-sale">-30%</span>
-              </div>
-              <div class="catalog__rest">
-                Осталось 50 шт
-              </div>
-              <div class="catalog__brand">
-                <i class="bi bi-check-circle-fill"></i>
-                ориганал
-              </div>
-              <a href="#" class="catalog__title">Чехол из алькантары на Apple </a>
-
-              <div class="catalog__feedback">
-                <div class="catalog__raiting">
-                  <i class="bi bi-star-fill"></i>
-                  <span>4,7</span>
-                </div>
-                <div class="catalog__review">
-                  <i class="bi bi-chat-fill"></i>
-                  <span>789 отзыва</span>
-                </div>
-              </div>
-              <button class="catalog__btn">Заказать</button>
-            </div>
-            <div class="catalog__card">
-              <div class="img__wrapper">
-                <img class="catalog__img" src="img/catalog-img3.webp" alt="">
-                <i class="fav-btn bi bi-heart-fill"></i>
-                <div class="catalog__promotions">
-                  <div class="sales">
-                    Распродажа
-                  </div>
-                </div>
-              </div>
-              <div class="catalog__price">
-                <span class="price-now">3500 &#8381;</span>
-                <span class="price-early">7600 &#8381;</span>
-                <span class="price-sale">-30%</span>
-              </div>
-              <div class="catalog__rest">
-                Осталось 50 шт
-              </div>
-              <div class="catalog__brand">
-                <i class="bi bi-check-circle-fill"></i>
-                ориганал
-              </div>
-              <a href="#" class="catalog__title">Чехол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro</a>
-
-              <div class="catalog__feedback">
-                <div class="catalog__raiting">
-                  <i class="bi bi-star-fill"></i>
-                  <span>4,7</span>
-                </div>
-                <div class="catalog__review">
-                  <i class="bi bi-chat-fill"></i>
-                  <span>789 отзыва</span>
-                </div>
-              </div>
-              <button class="catalog__btn">Заказать</button>
-            </div>
-            <div class="catalog__card">
-              <div class="img__wrapper">
-                <img class="catalog__img" src="img/catalog-img.webp" alt="">
-                <i class="fav-btn bi bi-heart-fill"></i>
-                <div class="catalog__promotions">
-                  <div class="sales">
-                    Распродажа
-                  </div>
-                </div>
-              </div>
-              <div class="catalog__price">
-                <span class="price-now">3500 &#8381;</span>
-                <span class="price-early">7600 &#8381;</span>
-                <span class="price-sale">-30%</span>
-              </div>
-              <div class="catalog__rest">
-                Осталось 50 шт
-              </div>
-              <div class="catalog__brand">
-                <i class="bi bi-check-circle-fill"></i>
-                ориганал
-              </div>
-              <a href="#" class="catalog__title">Чехол из алькантары на Apple </a>
-
-              <div class="catalog__feedback">
-                <div class="catalog__raiting">
-                  <i class="bi bi-star-fill"></i>
-                  <span>4,7</span>
-                </div>
-                <div class="catalog__review">
-                  <i class="bi bi-chat-fill"></i>
-                  <span>789 отзыва</span>
-                </div>
-              </div>
-              <button class="catalog__btn">Заказать</button>
-            </div>
-            <div class="catalog__card">
-              <div class="img__wrapper">
-                <img class="catalog__img" src="img/catalog-img3.webp" alt="">
-                <i class="fav-btn bi bi-heart-fill"></i>
-                <div class="catalog__promotions">
-                  <div class="sales">
-                    Распродажа
-                  </div>
-                </div>
-              </div>
-              <div class="catalog__price">
-                <span class="price-now">3500 &#8381;</span>
-                <span class="price-early">7600 &#8381;</span>
-                <span class="price-sale">-30%</span>
-              </div>
-              <div class="catalog__rest">
-                Осталось 50 шт
-              </div>
-              <div class="catalog__brand">
-                <i class="bi bi-check-circle-fill"></i>
-                ориганал
-              </div>
-              <a href="#" class="catalog__title">Чехол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro</a>
+              <a href="#" class="catalog__title">Чехол из алькантары на Apple iPhone 16 Pro хол из алькантары на Apple
+                iPhone 16 Pro хол из алькантары на Apple iPhone 16 Pro</a>
 
               <div class="catalog__feedback">
                 <div class="catalog__raiting">
