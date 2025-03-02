@@ -18,10 +18,11 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  
+
   <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script defer src="js/swiper.js"></script>
   <script defer src="js/aos.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
@@ -38,28 +39,91 @@
               <h3>Цвет</h3>
               <div class="filter-color">
                 <div class="filter-color__item">
-                  <input class="filter-color__radio" type="radio" name="color" id="color-red" >
-                  <label class="filter-color__label" for="color-red" aria-label="красный цвет" style="background-color: red;"></label>
+                  <input class="filter-color__checkbox" type="checkbox" name="color-red" id="color-red">
+                  <label class="filter-color__label" for="color-red" style="background-color: red;" tabindex="0"
+                    id="color-red-label" aria-label="красный цвет" role="checkbox" aria-checked="false"></label>
                 </div>
                 <div class="filter-color__item">
-                  <input class="filter-color__radio" type="radio" name="color" id="color-green" >
-                  <label class="filter-color__label" for="color-green" aria-label="зеленый цвет" style="background-color: green;"></label>
+                  <input class="filter-color__checkbox" type="checkbox" name="color-green" id="color-green">
+                  <label class="filter-color__label" for="color-green" aria-label="зеленый цвет"
+                    style="background-color: green;" tabindex="0" id="color-green-label" aria-label="зеленый цвет"
+                    role="checkbox" aria-checked="false"></label>
+                </div>
+
+                <div class="filter-color__item">
+                  <input class="filter-color__checkbox" type="checkbox" name="color-blue" id="color-blue">
+                  <label class="filter-color__label" for="color-blue" aria-label="синий цвет"
+                    style="background-color: blue;" tabindex="0" id="color-blue-label" aria-label="синий цвет"
+                    role="checkbox" aria-checked="false"></label>
                 </div>
                 <div class="filter-color__item">
-                  <input class="filter-color__radio" type="radio" name="color" id="color-blue" >
-                  <label class="filter-color__label" for="color-blue" aria-label="синий цвет" style="background-color: blue;"></label>
-                </div>
-                <div class="filter-color__item">
-                  <input class="filter-color__radio" type="radio" name="color" id="color-yellow" >
-                  <label class="filter-color__label" for="color-yellow" aria-label="желтый цвет" style="background-color: yellow;"></label>
+                  <input class="filter-color__checkbox" type="checkbox" name="color-yellow" id="color-yellow">
+                  <label class="filter-color__label" for="color-yellow" aria-label="желтый цвет"
+                    style="background-color: yellow;" tabindex="0" id="color-yellow-label" aria-label="желтый цвет"
+                    role="checkbox" aria-checked="false"></label>
                 </div>
               </div>
             </div>
+
+            <div class="filter__section">
+              <h3>Размер</h3>
+              <div class="filter-size">
+                <div class="filter-size__item">
+                  <input class="filter-size__radio" type="radio" name="size" id="size-s">
+                  <label class="filter-size__label" for="size-s" tabindex="0" id="size-s-label"
+                    aria-label="маленький размер" role="radio" aria-checked="false">S</label>
+                </div>
+                <div class="filter-size__item">
+                  <input class="filter-size__radio" type="radio" name="size" id="size-m">
+                  <label class="filter-size__label" for="size-m" tabindex="0" id="size-m-label"
+                    aria-label="средний размер" role="radio" aria-checked="false">M</label>
+                </div>
+                <div class="filter-size__item">
+                  <input class="filter-size__radio" type="radio" name="size" id="size-l" disabled>
+                  <label class="filter-size__label" for="size-l" tabindex="0" id="size-l-label"
+                    aria-label="большой размер" role="radio" aria-checked="false">L</label>
+                </div>
+                <div class="filter-size__item">
+                  <input class="filter-size__radio" type="radio" name="size" id="size-xl" disabled checked>
+                  <label class="filter-size__label" for="size-xl" tabindex="0" id="size-xl-label"
+                    aria-label="очень большой размер" role="radio" aria-checked="false">XL</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter__section">
+              <h3>Бренд</h3>
+              <div class="filter-brand">
+                <div class="filter-brand__item">
+                  <input class="filter-brand__checkbox" type="checkbox" name="brand-apple" id="brand-apple">
+                  <label class="filter-brand__label" for="brand-apple" tabindex="0" id="brand-apple-label"
+                    aria-label="бренд apple" role="checkbox" aria-checked="false">Apple</label>
+                </div>
+                <div class="filter-brand__item">
+                  <input class="filter-brand__checkbox" type="checkbox" name="brand-samsung" id="brand-samsung">
+                  <label class="filter-brand__label" for="brand-samsung" tabindex="0" id="brand-samsung-label"
+                    aria-label="бренд samsung" role="checkbox" aria-checked="false">Samsung</label>
+                </div>
+                <div class="filter-brand__item">
+                  <input class="filter-brand__checkbox" type="checkbox" name="brand-xiaomi" id="brand-xiaomi" disabled>
+                  <label class="filter-brand__label" for="brand-xiaomi" tabindex="0" id="brand-xiaomi-label"
+                    aria-label="бренд xiaomi" role="checkbox" aria-checked="false">Xiaomi</label>
+                </div>
+                <div class="filter-brand__item">
+                  <input class="filter-brand__checkbox" type="checkbox" name="brand-huawei" id="brand-huawei" disabled
+                    checked>
+                  <label class="filter-brand__label" for="brand-huawei" tabindex="0" id="brand-huawei-label"
+                    aria-label="бренд huawei" role="checkbox" aria-checked="false">Huawei</label>
+                </div>
+              </div>
+            </div>
+            
+
           </form>
         </div>
         <div class="catalog__content">
           <div class="catalog__sort">
-            
+
           </div>
           <div class="catalog__grid">
             <div class="catalog__card" data-aos="flip-up">
@@ -76,10 +140,10 @@
                   <!-- If we need pagination -->
                   <div class="swiper-pagination"></div>
 
-                 
+
                 </div>
 
-                
+
                 <i class="fav-btn bi bi-heart-fill"></i>
                 <div class="catalog__promotions">
                   <div class="sales">
