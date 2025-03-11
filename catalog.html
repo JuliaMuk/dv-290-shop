@@ -17,14 +17,21 @@
 
   <link rel="stylesheet" href="fonts/css/fontello.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
   <link rel="stylesheet" href="css/style.css">
 
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
   <script defer src="js/swiper.js"></script>
   <script defer src="js/aos.js"></script>
   <script defer src="js/main.js"></script>
+  <script defer src="js/choices.js"></script>
+
 </head>
 
 <body>
@@ -66,25 +73,38 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="filter__section">
               <h3>Цена</h3>
               <div class="filter-price">
                 <div class="filter-price__range">
-                  <input type="range" 
-                         class="filter-price__slider " 
-                         id="price-range"
-                         min="0" 
-                         max="100000" 
-                         step="1000"
-                         value="50000">
+                  <input type="range" class="filter-price__slider " id="price-range" min="0" max="100000" step="1000"
+                    value="50000">
                   <div class="filter-price__values">
-                    <span class="filter-price__min">0 ₽</span>            
+                    <span class="filter-price__min">0 ₽</span>
                     <span class="filter-price__max">100000 ₽</span>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="filter__section">
+              <h3>Срок поставки</h3>
+              <div class="filter-delivery">
+                <div class="filter-delivery__container">
+                  <div class="filter-delivery__slider">
+                    <div class="filter-delivery__progress"></div>
+                  </div>
+                  <input type="range" class="filter-delivery__range min" min="0" max="10" value="0" tabindex="0">
+                  <input type="range" class="filter-delivery__range" min="0" max="10" value="10" tabindex="0">
+                </div>
+                <div class="filter-delivery__values">
+                  <div class="filter-delivery__min">от <span>0</span> дней</div>
+                  <div class="filter-delivery__max">до <span>10</span> дней</div>
+                </div>
+              </div>
+            </div>
+
 
 
             <div class="filter__section">
@@ -140,6 +160,27 @@
               </div>
             </div>
 
+            <div class="filter__section">
+              <h3>Сортировка</h3>
+              <select class="filter-sort" name="sort" id="sort" aria-label="Сортировка товаров">
+                <option value="popular">По популярности</option>
+                <option value="price-asc">По возрастанию цены</option>
+                <option value="price-desc">По убыванию цены</option>
+                <option value="rating">По рейтингу</option>
+                <option value="new">Сначала новые</option>
+              </select>
+            </div>
+
+            <div class="filter__section">
+              <h3>Сортировка</h3>
+              <select class="filter-sort-choices" name="sort" id="sort" aria-label="Сортировка товаров">
+                <option value="popular">По популярности</option>
+                <option value="price-asc">По возрастанию цены</option>
+                <option value="price-desc">По убыванию цены</option>
+                <option value="rating">По рейтингу</option>
+                <option value="new">Сначала новые</option>
+              </select>
+            </div>
 
           </form>
         </div>
