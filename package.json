@@ -1,0 +1,26 @@
+{
+  "name": "dv-290-shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuliaMuk/dv-290-shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuliaMuk/dv-290-shop/issues"
+  },
+  "homepage": "https://github.com/JuliaMuk/dv-290-shop#readme",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.14",
+    "flowbite": "^3.1.2"
+  }
+}
