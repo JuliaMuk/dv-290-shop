@@ -60,3 +60,7 @@ rangePrice.addEventListener('input',
 
 
 
+new AirDatepicker('#date',  {
+    range: true,
+    multipleDatesSeparator: ' - '
+});

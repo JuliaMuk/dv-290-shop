@@ -691,4 +691,91 @@ input[type=range].filter-price__slider::-ms-thumb {
 
 
 
+/*------------форма регистрации/авторизации------------------*/
+
+.form__item {
+  margin: 10px 0;
+}
+
+.form__label {
+  color: darkblue;
+}
+
+.form__field {
+  margin-top: 10px;
+  border: 1px solid darkblue;
+  padding: 10px;
+  border-radius: 7px;
+  color: darkblue;
+  background-color: lavender;
+  transition: outline 0.3s, outline-offset 0.3s, background 0.3s;
+}
+
+.form__btn {
+  background-color: darkblue;
+  color:#fff;
+  padding: 10px 20px;
+  border:none;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.form__field:hover,
+.form__field:focus {
+  outline: 1px solid rgba(0, 0, 139, 0.493);
+  outline-offset: 3px;
+  background-color: rgb(214, 214, 255);
+}
+
+.form__btn:hover,
+.form__btn:focus {
+  background-color: rgb(0, 0, 53);
+  color:lavender;
+  outline: 1px solid rgba(0, 0, 139, 0.493);
+  outline-offset: 3px;
+}
+
+.form__field:disabled {
+  border: 1px solid rgb(54, 54, 71); 
+  background-color: rgba(230, 230, 250, 0.5);
+}
+.form__field:disabled:hover,
+.form__field:disabled:focus {
+  outline: none;
+  background-color: rgba(230, 230, 250, 0.5);
+}
+
+.form__btn:disabled {
+  background-color: rgb(54, 54, 71);
+  color:#fff;
+}
+.form__btn:disabled:hover,
+.form__btn:disabled:focus {
+  background-color: rgb(54, 54, 71);
+  outline: none;
+}
+
+/* .form__field:valid{
+  border: 1px solid green; 
+  background-color: rgba(0, 128, 0, 0.3);
+} */
+
+/* .form__field:invalid{
+  border: 1px solid red; 
+  background-color: rgba(255, 0, 0, 0.3);
+} */
+
+.form__field.valid{
+  border: 1px solid green; 
+  background-color: rgba(0, 128, 0, 0.3);
+} 
+
+.form__field.invalid {
+  border: 1px solid red; 
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.form__field.invalid+.form__message-validate {
+  color: red;
+  font-size: 10px;
+}
 

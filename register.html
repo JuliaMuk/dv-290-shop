@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/validation.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Интернет-магазин</h1>
+
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <form action="" id="form-registration" novalidate>
+                    <div class="form__item">
+                        <div>
+                            <label for="email" class="form__label">Введите email</label>
+                        </div>
+                        <div>
+                            <input type="email" id="email" class="form__field" required>
+                            <div class="form__message-validate"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="form__item">
+                        <div>
+                            <label for="login" class="form__label">Введите логин</label>
+                        </div>
+                        <div>
+                            <input type="text" id="login" class="form__field" required>
+                            <div class="form__message-validate"></div>
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div>
+                            <label for="password" class="form__label">Введите пароль</label>                            
+                        </div>
+                        <div>
+                            <input type="password" id="password" class="form__field" required>
+                            <div class="form__message-validate"></div>
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div>
+                            <input type="submit" id="login" class="form__btn" >
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
