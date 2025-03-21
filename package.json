@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "localPug": "pug -w index.pug"
   },
   "repository": {
     "type": "git",
@@ -17,10 +17,12 @@
   "homepage": "https://github.com/JuliaMuk/dv-290-shop#readme",
   "description": "",
   "devDependencies": {
+    "pug": "^3.0.3",
     "tailwindcss": "^3.4.17"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.14",
-    "flowbite": "^3.1.2"
+    "flowbite": "^3.1.2",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }

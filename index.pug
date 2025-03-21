@@ -1,0 +1,24 @@
+html(lang="ru")
+  head(class="h-screen")
+    meta(charset="utf-8")
+    style
+      include css/output.css
+    title= "Pug. Начало работы"
+  body(class="h-screen")
+      div(class="flex flex-col h-screen")
+        header(class="bg-lime-400 p-6") 
+            h1(class="text-pink-800 text-3xl font-bold") Интернет-магазин
+        main(class="grow") 
+            div(class="grid grid-cols-6 gap-6")
+                -   var cards = [ { title: 'товар 1', price: '10000', path_img: 'img/catalog-img.webp', sale:true},{ title: 'товар 2', price: '15000', path_img: 'img/catalog-img2.webp', sale: false }];
+                    each card in cards
+                        div(class="p-10")
+                            img(src=card.path_img)
+                            if card.sale
+                                p(class="text-red-700") Скидка!
+                            p=card.title
+                            p=card.price+'₽'
+
+        div(class="bg-lime-400 p-6") 
+            p &copy; Название компании, 2025
+
